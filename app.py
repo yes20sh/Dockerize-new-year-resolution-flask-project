@@ -1,12 +1,13 @@
+import os
 from flask import Flask, redirect, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
-DB_USERNAME = ""
-DB_PASSWORD = ""
-DB_HOST = "" 
-DB_PORT = "3306"
-DB_NAME = "project_db"
+DB_USERNAME = os.getenv("DB_USERNAME")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+DB_HOST = os.getenv("DB_HOST")
+DB_PORT = os.getenv("DB_PORT", "3306")
+DB_NAME = os.getenv("DB_NAME")
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = f"mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
