@@ -2,6 +2,9 @@
 
 This is a simple Flask web application to manage your New Year resolutions. You can add, display, update, and delete your resolutions.
 
+![diagram-export-2-22-2025-2_17_43-PM](https://github.com/user-attachments/assets/c7181a12-4d98-459f-9d7b-c307737e377f)
+
+
 ## Features
 
 - Add new resolutions with a title and description.
@@ -15,15 +18,16 @@ This is a simple Flask web application to manage your New Year resolutions. You 
 - Flask 2.3.2
 - Flask-SQLAlchemy 3.0.3
 - PyMySQL 1.0.3
+- Docker
+- Docker Compose
 
 ## Installation
 
 1. Clone the repository:
-```
-    sh
+    ```sh
     git clone https://github.com/yourusername/New-Year-resolution-project.git
     cd New-Year-resolution-project
- ```
+    ```
 
 2. Create a virtual environment:
     ```sh
@@ -70,12 +74,23 @@ This is a simple Flask web application to manage your New Year resolutions. You 
 
 3. Use the web interface to add, display, update, and delete your resolutions.
 
+## Docker Setup
+
+1. Build and run the Docker containers:
+    ```sh
+    docker-compose up --build
+    ```
+
+2. Open your web browser and go to `http://127.0.0.1:8000`.
+
 ## Project Structure
 
 - [app.py](http://_vscodecontentref_/2): The main application file.
 - [templates](http://_vscodecontentref_/3): Contains HTML templates for the web pages.
 - [static](http://_vscodecontentref_/4): Contains static files like images.
 - [requirements.txt](http://_vscodecontentref_/5): Lists the required Python packages.
+- [docker-compose.yml](http://_vscodecontentref_/6): Docker Compose configuration file.
+- [dockerfile](http://_vscodecontentref_/7): Dockerfile for building the Docker image.
 
 ## License
 
