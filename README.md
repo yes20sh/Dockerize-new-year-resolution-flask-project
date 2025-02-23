@@ -1,9 +1,10 @@
-# New-Year-resolution-project
+# New-Year-Resolution-Project
 
 This is a simple Flask web application to manage your New Year resolutions. You can add, display, update, and delete your resolutions.
 
-![diagram-export-2-22-2025-2_17_43-PM](https://github.com/user-attachments/assets/c7181a12-4d98-459f-9d7b-c307737e377f)
+## Description
 
+The New-Year-Resolution-Project is designed to help users manage their New Year resolutions. It provides a web interface where users can add new resolutions, view all resolutions, update existing resolutions, and delete resolutions they no longer want to keep.
 
 ## Features
 
@@ -15,11 +16,10 @@ This is a simple Flask web application to manage your New Year resolutions. You 
 ## Requirements
 
 - Python 3.12
-- Flask 2.3.2
-- Flask-SQLAlchemy 3.0.3
-- PyMySQL 1.0.3
-- Docker
-- Docker Compose
+- Flask 2.0.3
+- Flask-SQLAlchemy 2.5.1
+- PyMySQL 1.0.2
+- Docker (optional, for containerized deployment)
 
 ## Installation
 
@@ -70,18 +70,25 @@ This is a simple Flask web application to manage your New Year resolutions. You 
     python app.py
     ```
 
-2. Open your web browser and go to `http://127.0.0.1:8000`.
+2. Open your web browser and go to `http://127.0.0.1:5000`.
 
 3. Use the web interface to add, display, update, and delete your resolutions.
 
-## Docker Setup
+## Docker Deployment
 
-1. Build and run the Docker containers:
+To run the application using Docker, follow these steps:
+
+1. Build the Docker image:
     ```sh
-    docker-compose up --build
+    docker-compose build
     ```
 
-2. Open your web browser and go to `http://127.0.0.1:8000`.
+2. Start the containers:
+    ```sh
+    docker-compose up
+    ```
+
+3. Open your web browser and go to `http://127.0.0.1:5000`.
 
 ## Project Structure
 
