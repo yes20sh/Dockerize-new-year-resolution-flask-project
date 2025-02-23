@@ -1,4 +1,4 @@
-# New-Year-Resolution-Project
+# New-Year-Resolution-flask-Project
 
 This is a simple Flask web application to manage your New Year resolutions. You can add, display, update, and delete your resolutions.
 
