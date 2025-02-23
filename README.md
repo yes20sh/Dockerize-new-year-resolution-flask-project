@@ -90,6 +90,20 @@ To run the application using Docker, follow these steps:
 
 3. Open your web browser and go to `http://127.0.0.1:5000`.
 
+## Automation Script
+
+To automate Docker installation, container creation, and deployment, you can use the provided Bash script:
+
+1. Make the script executable:
+    ```sh
+    chmod +x docker-automation.sh
+    ```
+
+2. Run the script:
+    ```sh
+    ./docker-automation.sh
+    ```
+
 ## Project Structure
 
 - [app.py](http://_vscodecontentref_/2): The main application file.
@@ -97,7 +111,8 @@ To run the application using Docker, follow these steps:
 - [static](http://_vscodecontentref_/4): Contains static files like images.
 - [requirements.txt](http://_vscodecontentref_/5): Lists the required Python packages.
 - [docker-compose.yml](http://_vscodecontentref_/6): Docker Compose configuration file.
-- [dockerfile](http://_vscodecontentref_/7): Dockerfile for building the Docker image.
+- [Dockerfile](http://_vscodecontentref_/7): Dockerfile for building the Docker image.
+- [docker-automation.sh](http://_vscodecontentref_/8): Bash script to automate Docker installation, container creation, and deployment.
 
 ## License
 
